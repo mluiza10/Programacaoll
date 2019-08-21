@@ -21,5 +21,7 @@
                  VerticalAlignment="Top" Text="" Margin="10,169,0,0" />
         <Button  Height="20" Width="211" Content="Calcular" HorizontalAlignment="Left" 
                  VerticalAlignment="Top" Margin="10,98,0,0" Click="CalcularClick"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="138,66,0,0"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="35,73,0,0"/>
     </Grid>
 </Window>
