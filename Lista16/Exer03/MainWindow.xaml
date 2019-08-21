@@ -1,0 +1,33 @@
+﻿<Window x:Class="Exer03.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exer03"
+        mc:Ignorable="d"
+        Title="Retangulo" Height="250" Width="300">
+    <Grid>
+        <GroupBox Header="Área e Diagonal">
+            <Grid>
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+                            VerticalAlignment="Top" Text="Base" Margin="10,10,0,0"/>
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left" 
+                       VerticalAlignment="Top" Text="Altura" Margin="120,10,0,0"/>
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left"
+                            VerticalAlignment="Top" Text="Área" Margin="10,101,0,0"/>
+                <TextBlock Height="20" Width="100" HorizontalAlignment="Left" 
+                       VerticalAlignment="Top" Text="Diagonal" Margin="120,101,0,0"/>
+                <TextBox Name="txtB" Height="20" Width="100" HorizontalAlignment="Left"
+                     VerticalAlignment="Top" Text="" Margin="10,30,0,0" />
+                <TextBox Name="txtAlt" Height="20" Width="100" HorizontalAlignment="Left"
+                     VerticalAlignment="Top" Text="" Margin="120,30,0,0" />
+                <TextBox Name="txtArea" Height="20" Width="100" HorizontalAlignment="Left"
+                     VerticalAlignment="Top" Text="" Margin="10,126,0,0" />
+                <TextBox Name="txtD" Height="20" Width="100" HorizontalAlignment="Left"
+                     VerticalAlignment="Top" Text="" Margin="120,126,0,0" />
+                <Button Height="20" Width="210" Content="Calcular" HorizontalAlignment="Left" 
+                         VerticalAlignment="Top" Click="CalcularClick" Margin="10,68,0,0"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
