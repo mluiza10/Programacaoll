@@ -1,0 +1,44 @@
+﻿<Window x:Class="Exer05.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exer05"
+        mc:Ignorable="d"
+        Title="Números" Height="250" Width="300">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="1*" />
+            </Grid.RowDefinitions>
+            <GroupBox Header="Intervalo">
+                <Grid>
+                    <TextBlock Height="20" Width="70" HorizontalAlignment="Left"
+                               VerticalAlignment="Top" Text="Início" Margin="10,1,0,0" />
+                    <TextBlock Height="20" Width="70" HorizontalAlignment="Left"
+                            VerticalAlignment="Top" Text="Fim" Margin="93,1,0,0"/>
+                    <TextBox Name="txtI" Height="20" Width="70" HorizontalAlignment="Left"
+                             VerticalAlignment="Top" Text="" Margin="10,21,0,0"/>
+                    <TextBox Name="txtF" Height="20" Width="70" HorizontalAlignment="Left"
+                     VerticalAlignment="Top" Text="" Margin="93,21,0,0" />
+                </Grid>
+            </GroupBox>
+            <GroupBox Header="Opções" Grid.Row="1">
+                <Grid>
+                    <CheckBox Name="check1" Content="Pares" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <CheckBox Name="check2" Content="ímpares" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </GroupBox>
+            <Button Name="txtlist" Content="Calcular" Grid.Row="2" Margin="4" Click="Button_Click"/>
+            <ListBox x:Name="lista" Grid.Column="1" Grid.RowSpan="3" >
+
+            </ListBox>
+        </Grid>
+    </Grid>
+</Window>
