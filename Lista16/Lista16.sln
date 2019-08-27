@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exer07", "Exer07\Exer07.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exer08", "Exer08\Exer08.csproj", "{8F4B75C1-472B-487D-8F67-B2EA0D9A0C57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex06", "..\..\..\..\..\Downloads\PEOO_2019-master\Lista16\Ex06\Ex06.csproj", "{FC3978A0-B235-40F9-9724-8586423D4949}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +173,26 @@ Global
 		{8F4B75C1-472B-487D-8F67-B2EA0D9A0C57}.Release|x64.Build.0 = Release|Any CPU
 		{8F4B75C1-472B-487D-8F67-B2EA0D9A0C57}.Release|x86.ActiveCfg = Release|Any CPU
 		{8F4B75C1-472B-487D-8F67-B2EA0D9A0C57}.Release|x86.Build.0 = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|ARM.Build.0 = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|x64.Build.0 = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Debug|x86.Build.0 = Debug|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|ARM.ActiveCfg = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|ARM.Build.0 = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|ARM64.Build.0 = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|x64.ActiveCfg = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|x64.Build.0 = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|x86.ActiveCfg = Release|Any CPU
+		{FC3978A0-B235-40F9-9724-8586423D4949}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
