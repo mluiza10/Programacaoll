@@ -6,7 +6,45 @@
         xmlns:local="clr-namespace:Exer08"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid>
-        
+        <GroupBox Header="Loja" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="475" Margin="21,19,0,0">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Margin="18,9,0,0" Width="120"/>
+                <TextBox x:Name="txtnome" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Margin="18,34,0,0"/>
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Veículo" HorizontalAlignment="Left" Height="173" VerticalAlignment="Top" Width="475" Margin="21,134,0,0">
+            <Grid>
+                <TextBlock Text="Placa" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,10,0,0"/>
+                <TextBlock Text="Fabricante" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,10,0,0"/>
+                <TextBlock Text="Modelo" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="240,10,0,0"/>
+                <TextBlock Text="Ano" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,80,0,0"/>
+                <TextBlock Text="Preço" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,80,0,0"/>
+                <TextBox x:Name="placa" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,30,0,0"/>
+                <TextBox x:Name="fabricante" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,30,0,0"/>
+                <TextBox x:Name="modelo" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="240,30,0,0"/>
+                <TextBox x:Name="ano" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,100,0,0"/>
+                <TextBox x:Name="preco" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,100,0,0"/>
+                <CheckBox x:Name="check" Content="Vendido" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,99,0,0"/>
+
+            </Grid>
+        </GroupBox>
+        <ListBox x:Name="lista" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="475" Margin="21,315,0,0"/>
+        <Button Content="Loja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,60,0,0" Click="Button_Click" Height="35"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="661,60,0,0" Click="Button_Click_1" Height="35"/>
+        <Button Content="Vender" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,114,0,0" Height="30" Click="Button_Click_2"/>
+        <Button Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="661,114,0,0" Height="30" Click="Button_Click_4"/>
+
+        <GroupBox Header="Preço Máximo" HorizontalAlignment="Left" Height="215" VerticalAlignment="Top" Width="225" Margin="534,194,0,0">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Text="Preço máximo:" VerticalAlignment="Top" Margin="50,20,0,0" Width="120"/>
+                <TextBox x:Name="precomax" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="50,55,0,0"/>
+                <Button Content="Procurar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="171" Margin="21,110,0,0" Height="38" Click="Button_Click_3"/>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>
+    
