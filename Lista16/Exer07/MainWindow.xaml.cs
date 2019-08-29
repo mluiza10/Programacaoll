@@ -30,27 +30,30 @@ namespace Exer07
         {
             h = new Historico();
         }
-        Disciplina dc;
+        
         private void CalcularClick2(object sender, RoutedEventArgs e)
         {
+            Disciplina dc;
             dc = new Disciplina(Nome.Text, int.Parse(Média.Text), Semestre.Text, Aprovado.IsChecked.Value);
             h.Inserir(dc);
-            list.Items.Add(dc);
+            list.ItemsSource = h.Listar();
+           
         }
 
         private void CalcularClick3(object sender, RoutedEventArgs e)
         {
             int f = list.SelectedIndex;
-            list.Items.Remove(f);
-            
+           
             h.Excluir(list.SelectedIndex);
-            
+            list.ItemsSource = h.Listar();
+
+
         }
 
-       /* private void CalcularClick4(object sender, RoutedEventArgs e)
+        private void CalcularClick4(object sender, RoutedEventArgs e)
         {
-            h.IRA();
-        }*/
+            MessageBox.Show(h.IRA().ToString());
+        }
 
      
     }

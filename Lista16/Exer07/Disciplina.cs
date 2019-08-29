@@ -26,5 +26,10 @@ namespace Exer07
             return $"{nome} - {semestre} - {media}";
         }
 
+        public double GetMedia()
+        {
+            return media;
+        }
+
     }
 }

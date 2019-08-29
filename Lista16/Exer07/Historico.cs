@@ -34,14 +34,14 @@ namespace Exer07
         }
         public void Excluir(int g)
         {
-            for(int i = g; i <= k; k++)
+            for(int i = g + 1; i < k; k++)
             {
-                discs[i] = discs[i + 1];
+                discs[i - 1] = discs[i];
             }
-            
+            discs[k] = null;
             k--;
         }
-        /*public double IRA()
+        public double IRA()
         {
             if (k == 0)
             return 0;
@@ -50,7 +50,7 @@ namespace Exer07
                 if (d != null )
                  y = y + d.GetMedia();
                 return y / k;
-        }*/
+        }
         
     }
 }
