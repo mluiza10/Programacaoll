@@ -9,6 +9,6 @@ namespace Ex02
     interface ISequencia
     {
         void Iniciar();
-        int Proximo(); 
+        
     }
 }
