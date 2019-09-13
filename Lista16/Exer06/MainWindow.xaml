@@ -36,7 +36,7 @@
                          Text="50"
                          IsReadOnly="True"/>
                     <Button Grid.Column="2" 
-                        Content="Iniciar"/>
+                        Content="Iniciar" Click="Button_Click"/>
                 </Grid>
             </GroupBox>
             <Button Content="Sortear" Grid.Row="1"
