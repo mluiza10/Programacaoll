@@ -25,9 +25,27 @@ namespace Exer06
             InitializeComponent();
         }
 
+
+        private void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            if (txt != null) txt.Text = slider.Value.ToString();
+        }
+
+        private Bingo b;
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            b = new Bingo();
+            b.Iniciar(int.Parse(txt.Text));
+            txtNum.Text = "";
+            txtNums.Text = "";
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            int n = b.Proximo();
+            txtNum.Text = n.ToString();
+            txtNums.Text += n.ToString() + " ";
         }
     }
 }

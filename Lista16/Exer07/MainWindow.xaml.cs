@@ -24,5 +24,37 @@ namespace Exer07
         {
             InitializeComponent();
         }
+
+        Historico h;
+        private void CalcularClick(object sender, RoutedEventArgs e)
+        {
+            h = new Historico();
+        }
+        
+        private void CalcularClick2(object sender, RoutedEventArgs e)
+        {
+            Disciplina dc;
+            dc = new Disciplina(Nome.Text, int.Parse(Média.Text), Semestre.Text, Aprovado.IsChecked.Value);
+            h.Inserir(dc);
+            list.ItemsSource = h.Listar();
+           
+        }
+
+        private void CalcularClick3(object sender, RoutedEventArgs e)
+        {
+            int f = list.SelectedIndex;
+           
+            h.Excluir(list.SelectedIndex);
+            list.ItemsSource = h.Listar();
+
+
+        }
+
+        private void CalcularClick4(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(h.IRA().ToString());
+        }
+
+     
     }
 }
